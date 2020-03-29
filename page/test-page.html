@@ -1,29 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Oooops! Трохи не вистачило часу :(( </title>
+    <title>Тестова сторінка </title>
 </head>
 <body>
   <header>
-    <h1>Oooops! Трохи не вистачило часу :((</h1>
+    <h1>Тестова сторінка </h1>
   </header>
   <nav>
+    <h2>Навігація сайту</h2>
     <ul>
       <li><a href="../index.html">    Домашня сторінка</a></li>
       <li>Тестова сторінка</li>
     </ul>
-    <h1>Test page</h1>
-    <button><a href="mailto:nowhere@mozilla.org">Send results</a></button>
-  
-  </nav>
-   
-  
-  <footer>
-    <p>©Авторские права никому не принадлежат, 2020. Все права защищены.</p>
-  </footer>
+   <!-- <h2>Test page</h2>
+    <button><a href="mailto:nowhere@mozilla.org">Send results</a></button> -->
+   </nav>
+   <main>
+     <h2>Анкета клієнта</h2>
+     <form  action="https://formspree.io/xzbvlozk"  method="POST">
+       <label>
+         Прізвище, ім'я клієнта:
+         <input type="text" name ="client-name" placeholder="Прізвище, ім'я клієнта" required>
+       </label>
+       <br>
+       <label>
+         Пошта клієнта:
+         <input type="email" name="client-email" placeholder="Пошта клієнта" required>
+       </label>
+       <br>
+         <label>Стать:</label>
+          <label> 
+            <input type="radio" name="gender" value="man" checked> Чоловік
+          </label>
+          <label> 
+            <input type="radio" name="gender" value="woman"> Жінка
+          </label>
+          <label> 
+            <input type="radio" name="gender" value="other"> Інше
+          </label>
+          <br>
+          <textarea name="complain-message"  cols="30" rows="10" placeholder="Введіть Ваше повідомлення..." required></textarea>
+          <br>
+          <input type="submit" value="Надіслати"> 
+          <input type="reset" value="Скинути">
+          
 
+       <table>
+       <h2>Таблиця:</h2>
+         <tr>
+           <td>1</td>
+           <td>2</td>
+         </tr>
+         <tr>
+           <td>3</td>
+           <td>4</td>
+         </tr> 
+       </table>
+
+     </form>
+   </main>
+  <footer>
+  <p>©Авторські права ..., 2020. Всі права захищені.</p>
+  </footer>
 </body>
 </html>
